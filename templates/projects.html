@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Arshia Aflaki</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/resume_styles.css') }}">
+</head>
+<body class="background-image">
+    <header>
+        <h1>Projects</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/resume">Resume</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="resume">
+        <div class="project">
+            <h2><a href="https://github.com/Arshiaafl/APItweet" target="_blank">APItweet</a></h2>
+            <p>Designed and implemented a RESTful API for text classification using FastAPI, TensorFlow, and Pydantic. Loaded a pre-trained Keras model for real-time predictions and implemented text preprocessing using a tokenizer and label encoder. Developed a prediction endpoint to handle POST requests, process input data, and return model predictions in a user-friendly format. Ensured robust error handling to manage prediction errors and maintain API reliability.</p>
+            <p><strong>Technologies Used:</strong> FastAPI, TensorFlow, Keras, Pydantic, Joblib, NumPy</p>
+            <p><strong>Outcome:</strong> Successfully created a scalable and efficient API capable of delivering accurate text classification predictions, contributing to the deployment of a machine learning model in a production environment.</p>
+        </div>
+        <div class="project">
+            <h2><a href="https://github.com/Arshiaafl/LLaMA3" target="_blank">LLaMA3</a></h2>
+            <p>Built a user-friendly AI chatbot application using Streamlit, integrating advanced language models with document retrieval capabilities.</p>
+            <p><strong>Responsibilities:</strong></p>
+            <ul>
+                <li>Article Retrieval: Implemented a function to scrape and parse articles from multiple sources to enrich chatbot responses with up-to-date information.</li>
+                <li>Language Model Integration: Leveraged OllamaLLM for generating responses based on both document context and general model knowledge, with dynamic fallback mechanisms.</li>
+                <li>User Interaction: Designed an interactive UI using Streamlit to handle real-time user queries, maintain conversation history, and manage chatbot interactions.</li>
+                <li>Response Handling: Developed logic to provide relevant responses by checking for context-based relevance and model-based knowledge.</li>
+            </ul>
+            <p><strong>Technologies Used:</strong> Streamlit, Langchain, OllamaLLM, Newspaper, Python</p>
+            <p><strong>Outcome:</strong> Created a versatile chatbot application that effectively combines document-based and model-based responses, enhancing the user experience with a robust and responsive interface.</p>
+        </div>
+        <div class="project">
+            <h2><a href="https://github.com/Arshiaafl/Movie-Recommendation-App" target="_blank">Movie Recommendation App</a></h2>
+            <p>Developed a movie recommendation system using Python and Streamlit, leveraging collaborative filtering techniques to provide personalized movie suggestions.</p>
+            <p><strong>Responsibilities:</strong></p>
+            <ul>
+                <li>Data Loading: Extracted and loaded movie and rating datasets from a zip file, preprocessing the movie titles for consistency.</li>
+                <li>User-Item Matrix: Created a user-item matrix from the ratings data to facilitate similarity calculations between movies.</li>
+                <li>Item Similarity Calculation: Implemented cosine similarity to determine how similar movies are to one another based on user ratings.</li>
+                <li>Recommendation Engine: Developed a recommendation engine to suggest movies based on the similarity scores of a given movie.</li>
+                <li>Streamlit Interface: Designed an interactive UI with Streamlit to allow users to input a movie name and receive personalized recommendations.</li>
+            </ul>
+            <p><strong>Technologies Used:</strong> Streamlit, pandas, scikit-learn, Python, zipfile</p>
+            <p><strong>Outcome:</strong> Successfully built a functional movie recommendation application that provides users with relevant movie suggestions based on collaborative filtering techniques, enhancing the user experience with a simple and intuitive interface.</p>
+        </div>
+        <div class="project">
+            <h2><a href="https://github.com/Arshiaafl/Text-Summarization" target="_blank">Text Summarization</a></h2>
+            <p>Developed a FastAPI-based service for summarizing articles using pre-trained language models.</p>
+            <p><strong>Responsibilities:</strong></p>
+            <ul>
+                <li>API Development: Created an API endpoint using FastAPI to handle POST requests for article summarization.</li>
+                <li>Data Processing: Integrated the Hugging Face Transformers pipeline to perform text summarization.</li>
+                <li>Model Integration: Utilized a pre-trained summarization model to generate concise summaries of input text.</li>
+                <li>Response Handling: Implemented logic to return summaries in a user-friendly format, ensuring accurate and meaningful responses.</li>
+            </ul>
+            <p><strong>Technologies Used:</strong> FastAPI, Pydantic, Transformers, Python</p>
+            <p><strong>Outcome:</strong> Successfully built a responsive API for summarizing text articles, allowing users to obtain concise summaries with ease, and demonstrating effective integration of NLP models into web services.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Arshia Aflaki</p>
+        <p><a href="mailto:arshiaaflaki@gmail.com">Email Me</a></p>
+    </footer>
+</body>
+</html>
